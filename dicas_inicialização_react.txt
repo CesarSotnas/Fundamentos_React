@@ -1,0 +1,15 @@
+Para iniciar uma aplicação React da maneira convencional precisamos do Node.js.
+Através do gerenciador de pacotes npm, é possível iniciar projetos.
+
+Hello Wolrd em React
+Para criar nossas aplicações utilizaremos o Vite.
+Antigamente era muito comum utilizar o creat-react-app, porém ele tem uma pior performance.
+Apenas precisamos digitar no terminal: npm create vite@latest e seguir as opções.
+
+Estrutura base do React
+Há algumas pastas e arquivos muito importantes.
+node_modules: dependências do projetos.
+public: assets e aquivos estáticos.
+src: local onde escrevemos o código da aplicação.
+src/index.js: arquivo de inicialização da aplicação.
+src/App.js: componente principal inicial (pode ser modificado).
