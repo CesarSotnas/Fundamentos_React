@@ -1,7 +1,11 @@
+import MyComponent from "./MyComponent"
+
+// 1 - Criando componente
 const FirstComponent = () => {
     return (
         <div>
             <h2>Meu primeiro Componente</h2>
+            <MyComponent />
         </div>
     )
 }
