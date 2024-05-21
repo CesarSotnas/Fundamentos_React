@@ -1,7 +1,9 @@
-import { Outlet } from 'react-router-dom'
-import './App.css'
-import NavBar from './components/NavBar'
-
+/* eslint-disable linebreak-style */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable linebreak-style */
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import './App.css';
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
         <Outlet /> 
       </div>
     </ div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -13,3 +13,7 @@ public: assets e aquivos estáticos.
 src: local onde escrevemos o código da aplicação.
 src/index.js: arquivo de inicialização da aplicação.
 src/App.js: componente principal inicial (pode ser modificado).
+
+Algus comandos extras:
+eslint:
+'npm init @eslint/config'

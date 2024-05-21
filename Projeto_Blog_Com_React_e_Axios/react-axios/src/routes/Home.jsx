@@ -1,32 +1,33 @@
-import { useState, useEffect } from "react"
-import { Link } from 'react-router-dom'
-import axios from "axios"
-import "./Home.css"
+/* eslint-disable react/react-in-jsx-scope */
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import blogFetch from '../axios/config';
+import './Home.css';
 
 
 const Home = () => {
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState([]);
   
   const getPosts = async() => {
     try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/posts/')
+      const response = await blogFetch.get('/posts/');
       const data = response.data;
 
-      console.log(data)
-      setPosts(data)
+      console.log(data);
+      setPosts(data);
 
     } catch(error) {
-        console.log(error)
+      console.log(error);
     }
- }
+  };
 
   useEffect(() => {
-    getPosts()
+    getPosts();
 
-  }, [])
+  }, []);
 
   return (
-    <div>
+    <div className='home'>
       <h1>Últimos posts</h1>
       {posts.length === 0 ? <p>Carregando...</p> : (
         posts.map((post) => (
@@ -38,7 +39,7 @@ const Home = () => {
         ))
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
